@@ -1,0 +1,6 @@
+route:
+  receiver: default
+receivers:
+- name: default
+  webhook_configs:
+  - url: http://correlator:8080/alerts/webhook

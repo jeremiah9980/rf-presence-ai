@@ -1,0 +1,8 @@
+groups:
+- name: rf-alerts
+  rules:
+  - alert: UnknownDeviceDetected
+    expr: unknown_devices_nearby > 0
+    for: 30s
+    labels:
+      severity: warning
