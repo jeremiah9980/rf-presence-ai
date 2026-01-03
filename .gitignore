@@ -1,0 +1,68 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.env
+.env.*
+venv/
+.venv/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+
+# ========================
+# ML / AI
+# ========================
+models/
+ai/models/
+*.pt
+*.onnx
+*.h5
+*.ckpt
+*.pb
+*.tflite
+
+# ========================
+# OpenCV / Media
+# ========================
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+
+# ========================
+# Docker
+# ========================
+*.log
+docker-data/
+docker-volumes/
+.dockerignore
+
+# ========================
+# Grafana / Prometheus
+# ========================
+grafana/data/
+prometheus/data/
+alertmanager/data/
+
+# ========================
+# OS / Editors
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ========================
+# Proxmox / Cloud-init
+# ========================
+*.qcow2
+*.img
+cloud-init/user-data.local.yml
