@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  correlator:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.correlator
+    ports:
+      - "8080:8080"
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./ops/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./ops/prometheus/alerts.yml:/etc/prometheus/alerts.yml
+    ports:
+      - "9090:9090"
+
+  alertmanager:
+    image: prom/alertmanager
+    volumes:
+      - ./ops/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
+    ports:
+      - "9093:9093"

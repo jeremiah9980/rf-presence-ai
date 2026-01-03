@@ -1,0 +1,5 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY pi-sensor/ /app
+RUN pip install requests pyyaml bluepy
+CMD ["python", "uploader.py"]

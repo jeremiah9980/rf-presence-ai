@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+redis
+prometheus-client
+scikit-learn
+opencv-python
+ultralytics
+easyocr

@@ -1,0 +1,2 @@
+sensor_id: front-yard
+upload_url: http://VM-IP:8080/rf-events
