@@ -1,0 +1,42 @@
+[33mcommit 90d567cfd2837826972cee5ae5a4135fb24eaba7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Jeremiah Cargill <jeremiahcargill@texasmutual.com>
+Date:   Sat Jan 3 16:29:38 2026 -0600
+
+    Convert rf-presence-ai from submodule to normal directory
+
+ rf-presence-ai                                     |  1 [31m-[m
+ rf-presence-ai/Dashboards/readme.md                |  1 [32m+[m
+ rf-presence-ai/Docker/Dockerfile.correlator        |  7 [32m++[m
+ rf-presence-ai/Docker/Dockerfile.sensor            |  5 [32m++[m
+ rf-presence-ai/Docker/readme.md                    |  1 [32m+[m
+ rf-presence-ai/Dsahboards/readme.md                |  1 [32m+[m
+ rf-presence-ai/README.md                           | 96 [32m++++++++++++++++++++++[m
+ rf-presence-ai/ai/clustering.py                    |  3 [32m+[m
+ rf-presence-ai/ai/lpr.py                           |  3 [32m+[m
+ rf-presence-ai/ai/readme                           |  1 [32m+[m
+ rf-presence-ai/ai/yolo_person.py                   |  4 [32m+[m
+ rf-presence-ai/correlator/readme.md                |  1 [32m+[m
+ rf-presence-ai/esp32-beacon/esp32_beacon.ino       |  3 [32m+[m
+ rf-presence-ai/esp32-beacon/readme.md              |  1 [32m+[m
+ rf-presence-ai/home-assistant/manifest.json        |  5 [32m++[m
+ rf-presence-ai/home-assistant/readme.md            |  1 [32m+[m
+ rf-presence-ai/home-assistant/sensor.py            |  2 [32m+[m
+ rf-presence-ai/ops/alertmanager/alertmanager.yml   |  6 [32m++[m
+ rf-presence-ai/ops/alertmanager/readme.md          |  1 [32m+[m
+ .../grafana/Dashboards/grafana_rf_presence_v2.json | 42 [32m++++++++++[m
+ rf-presence-ai/ops/grafana/Dashboards/readme.md    |  1 [32m+[m
+ .../ops/grafana/grafana_rf_presence_v2.json        | 42 [32m++++++++++[m
+ rf-presence-ai/ops/grafana/readme.md               |  1 [32m+[m
+ rf-presence-ai/ops/prometheus/alerts.yml           |  8 [32m++[m
+ rf-presence-ai/ops/prometheus/prometheus.yml       |  6 [32m++[m
+ rf-presence-ai/ops/prometheus/readme.md            |  1 [32m+[m
+ rf-presence-ai/ops/readme.md                       |  1 [32m+[m
+ rf-presence-ai/pi-sensor/config.yaml               |  2 [32m+[m
+ rf-presence-ai/pi-sensor/readme.md                 |  1 [32m+[m
+ rf-presence-ai/pi-sensor/uploader.py               | 10 [32m+++[m
+ rf-presence-ai/proxmox/cloud-init/readme.md        |  1 [32m+[m
+ rf-presence-ai/proxmox/cloud-init/user-data.yml    |  5 [32m++[m
+ rf-presence-ai/services/correlator/correlator.py   | 28 [32m+++++++[m
+ rf-presence-ai/services/correlator/readme.md       |  1 [32m+[m
+ rf-presence-ai/services/readme.md                  |  1 [32m+[m
+ 35 files changed, 293 insertions(+), 1 deletion(-)
